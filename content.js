@@ -2,12 +2,12 @@ export const WORK = `
     <section>
       <h2>Work</h2>
       <article class="job">
-        <h3>Senior Software Engineer @ Ford</h3>
+        <h3>Senior Software Engineer @ Company</h3>
         <p><strong>Stack:</strong> Node.js, PostgreSQL, OpenAPI, Tekton</p>
         <img src="assets/architecture-example.png" alt="Architecture Diagram" />
       </article>
       <article class="job">
-        <h3>Full Stack Developer @ IBM</h3>
+        <h3>Full Stack Developer @ Company</h3>
         <p><strong>Stack:</strong> Java, React, AWS, SQL/NoSQL</p>
         <img src="assets/ibm-architecture.png" alt="Architecture Diagram" />
       </article>
@@ -21,10 +21,10 @@ export const ABOUT = `
       <p>Hello, I'm Hazel...</p>
       <ul>
         <li>Email: <a href="mailto:hazel@example.com">hazel@example.com</a></li>
-        <li>GitHub: <a href="https://github.com/username">github.com/username</a></li>
-        <li>LinkedIn: <a href="https://linkedin.com/in/hazelpiper">linkedin.com/in/hazelpiper</a></li>
+        <li>GitHub: <a href="https://github.com">github.com/username</a></li>
+        <li>LinkedIn: <a href="https://linkedin.com">linkedin.com/in/hazelpiper</a></li>
       </ul>
-      <p><a href="assets/hazel-resume.pdf" download>📄 Download Résumé</a></p>
+      <p><a href="assets/hazel-resume.pdf" download>📄 Download Resume</a></p>
     </section>
   `;
 
