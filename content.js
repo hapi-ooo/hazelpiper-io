@@ -1,16 +1,17 @@
 export const WORK = `
     <section id="work-section">
-      <h2>Software Engineering</h2>
+    <div class="hero-title-container">
+      <p>providing</p>
+      <h2> Architecture</h2>
+      <h3>&</h3>
+      <br />
+      <h2 id="h2-engineering"> Engineering</h2>
+      </div>
       <ul>
         <li>for <strong>Distributed Systems</strong>,</li>
         <li><strong>SCADA</strong>, and</li>
         <li><strong>Cloud</strong></li>
       </ul>
-      <article class="job">
-        <h3>USLX SME Approval @ Industrial Systems</h3>
-        <p><strong>Stack:</strong> Java, React, AWS, SQL/NoSQL</p>
-        <img src="./assets/example-arch.jpg" alt="Architecture Diagram" />
-      </article>
     </section>
   `;
 
@@ -22,9 +23,9 @@ export const WORK2 = `
         <img src="assets/architecture-example.png" alt="Architecture Diagram" />
       </article>
       <article class="job">
-        <h3>Full Stack Developer @ Company</h3>
+        <h3>USLX SME Approval @ Industrial Systems</h3>
         <p><strong>Stack:</strong> Java, React, AWS, SQL/NoSQL</p>
-        <img src="assets/ibm-architecture.png" alt="Architecture Diagram" />
+        <img src="./assets/example-arch.jpg" alt="Architecture Diagram" />
       </article>
     </section>
   `;
