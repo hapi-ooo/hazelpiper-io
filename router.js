@@ -43,8 +43,6 @@ const routes = {
 function renderRoute() {
   const hash = location.hash.replace('#', '') || 'work';
   const content = routes[hash] || `<p>Page not found.</p>`;
-  console.log(hash);
-  console.log(content);
   document.getElementById('content').innerHTML = content;
 }
 
