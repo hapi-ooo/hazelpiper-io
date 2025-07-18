@@ -223,6 +223,6 @@ body.dark .profile-pic {
     flex-direction: column;
     gap: 0.5rem;
     align-items: flex-start;
-    padding: 1rem var(--default-x-margin);
+    padding: 2rem var(--mobile-x-margin);
   }
 }
