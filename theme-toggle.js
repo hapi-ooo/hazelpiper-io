@@ -4,14 +4,16 @@ function setThemeIcon(toggle) {
   localStorage.setItem('theme', newTheme);
 }
 
-const theme = localStorage.getItem('theme');
-document.body.className = theme || 'light';
+export function listenForThemeToggle() {
+  const theme = localStorage.getItem('theme');
+  document.body.className = theme || 'light';
 
-const toggle = document.getElementById('theme-toggle');
-setThemeIcon(toggle);
-
-toggle.addEventListener('click', () => {
-  document.body.classList.toggle('dark');
-  document.body.classList.toggle('light');
+  const toggle = document.getElementById('theme-toggle');
   setThemeIcon(toggle);
-});
+
+  toggle.addEventListener('click', () => {
+    document.body.classList.toggle('dark');
+    document.body.classList.toggle('light');
+    setThemeIcon(toggle);
+  });
+}
