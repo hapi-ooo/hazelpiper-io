@@ -1,5 +1,21 @@
 export const WORK = `
-    <section>
+    <section id="work-section">
+      <h2>Software Engineering</h2>
+      <ul>
+        <li>for <strong>Distributed Systems</strong>,</li>
+        <li><strong>SCADA</strong>, and</li>
+        <li><strong>Cloud</strong></li>
+      </ul>
+      <article class="job">
+        <h3>USLX SME Approval @ Industrial Systems</h3>
+        <p><strong>Stack:</strong> Java, React, AWS, SQL/NoSQL</p>
+        <img src="./assets/example-arch.jpg" alt="Architecture Diagram" />
+      </article>
+    </section>
+  `;
+
+export const WORK2 = `
+    <section id="work-section">
       <article class="job">
         <h3>Senior Software Engineer @ Company</h3>
         <p><strong>Stack:</strong> Node.js, PostgreSQL, OpenAPI, Tekton</p>
