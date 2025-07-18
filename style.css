@@ -356,7 +356,7 @@ body.dark main #work-section ul li strong {
   footer {
     flex-direction: column;
     gap: 0.5rem;
-    align-items: flex-start;
+    align-items: center;
     padding: 2rem var(--mobile-x-margin);
   }
 
