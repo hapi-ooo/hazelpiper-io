@@ -1,6 +1,5 @@
 export const WORK = `
     <section>
-      <h2>Work</h2>
       <article class="job">
         <h3>Senior Software Engineer @ Company</h3>
         <p><strong>Stack:</strong> Node.js, PostgreSQL, OpenAPI, Tekton</p>
@@ -16,7 +15,6 @@ export const WORK = `
 
 export const ABOUT = `
     <section>
-      <h2>About Me</h2>
       <img src="assets/profile-placeholder.jpg" alt="Profile Photo" class="profile-pic" />
       <p>Hello, I'm Hazel...</p>
       <ul>
@@ -30,7 +28,6 @@ export const ABOUT = `
 
 export const FUN = `
     <section>
-      <h2>Fun</h2>
       <ul>
         <li><strong>UI/UX Exploration:</strong> Designing accessible web experiences with minimal JS</li>
         <li><strong>IoT Projects:</strong> Raspberry Pi automation and dashboard displays</li>

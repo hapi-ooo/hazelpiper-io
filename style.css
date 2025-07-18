@@ -12,6 +12,8 @@
   --dark-link-color: #66aaff;
   --dark-header-bg: #1f1f1f;
   --dark-border-color: #333;
+  --default-x-margin: 14rem;
+  --mobile-x-margin: 2rem;
 }
 
 html, body {
@@ -30,19 +32,22 @@ body {
 }
 
 header {
-  background-color: var(--header-bg);
-  border-bottom: 1px solid var(--border-color);
-  padding: 1rem 2rem;
+  /* background-color: var(--header-bg); */
+  background: linear-gradient(180deg,var(--header-bg) 0%, var(--bg-color) 100%);
+  /* border-bottom: 1px solid var(--border-color); */
+  /* padding: 1rem 2rem; */
 }
 
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 2rem var(--default-x-margin) 0;
 }
 
 .nav-left h1 {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
+  font-weight: 400;
   margin: 0;
 }
 
@@ -62,7 +67,7 @@ nav {
 .nav-right a,
 .nav-right button {
   text-decoration: none;
-  color: var(--link-color);
+  color: var(--text-color);
   font-weight: 500;
   background: none;
   border: none;
@@ -72,12 +77,23 @@ nav {
 
 main {
   flex: 1 0 auto;
-  padding: 2rem;
+  padding: 2rem var(--default-x-margin);
   max-width: 960px;
-  margin: auto;
+  display: flex; 
+  flex-direction: column;
+  justify-content: center;
+  /* width: max-content; */
+  /* padding: 1rem 14rem 0; */
+  /* margin: 0 var(--default-x-margin); */
 }
 
 h2 {
+  border-bottom: 2px solid var(--accent-color);
+  padding-bottom: 0.3rem;
+  margin-bottom: 1rem;
+}
+
+.accent-underline a {
   border-bottom: 2px solid var(--accent-color);
   padding-bottom: 0.3rem;
   margin-bottom: 1rem;
@@ -113,7 +129,11 @@ body.dark {
   color: var(--dark-text-color);
 }
 
-body.dark header,
+body.dark header {
+  background: linear-gradient(180deg,var(--dark-header-bg) 0%, var(--dark-bg-color) 100%);
+  /* border-color: var(--dark-border-color); */
+}
+
 body.dark footer {
   background-color: var(--dark-header-bg);
   border-color: var(--dark-border-color);
@@ -122,7 +142,7 @@ body.dark footer {
 body.dark a,
 body.dark .nav-right a,
 body.dark .nav-right button {
-  color: var(--dark-link-color);
+  color: var(--dark-text-color);
 }
 
 body.dark .job img,
@@ -136,6 +156,7 @@ body.dark .profile-pic {
     flex-direction: column;
     gap: 0.5rem;
     align-items: flex-start;
+    padding: 2rem var(--mobile-x-margin)
   }
 
   .nav-right {
@@ -144,6 +165,6 @@ body.dark .profile-pic {
   }
 
   main {
-    padding: 1rem;
+    padding: 1rem var(--mobile-x-margin);
   }
 }
